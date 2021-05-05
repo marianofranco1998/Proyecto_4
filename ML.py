@@ -40,7 +40,7 @@ def crear_arbol(df):
 
     A = to_agraph(G)
     A.layout('dot')
-    A.draw('result3.png')
+    A.draw('result_chido.png')
 
 def rec_crear_arbol(df, G, parent, lab):
     
