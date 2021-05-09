@@ -1,0 +1,143 @@
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_low) AND  => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_up) AND (Irradiate=no) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_up) AND (Irradiate=yes) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_up) AND (Age = 40-49) AND (Node Caps = yes) AND  => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_up) AND (Age = 50-59) AND  => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 30-34) AND (Breast Quadrant = ?) AND  => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 30-34) AND (Breast Quadrant = central) AND  => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 0-4) AND  => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 25-29) AND (Breast = left) AND (Age=50-59) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 25-29) AND (Breast = left) AND (Age=40-49) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 25-29) AND (Breast = left) AND (Age=60-69) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 25-29) AND (Breast = right) AND (Age=60-69) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 25-29) AND (Breast = right) AND (Age=40-49) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 25-29) AND (Breast = right) AND (Age=50-59) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 40-44) AND  => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 10-14) AND  => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 20-24) AND (Age = 70-79) AND  => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 20-24) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 20-24) AND (Age = 40-49) AND  => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 20-24) AND (Age = 30-39) AND (Breast Quadrant=central) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 20-24) AND (Age = 30-39) AND (Breast Quadrant=left_up) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 20-24) AND (Age = 60-69) AND  => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 35-39) AND (Age=50-59) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 35-39) AND (Age=40-49) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 35-39) AND (Age=30-39) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 15-19) AND (Age=60-69) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 15-19) AND (Age=30-39) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 15-19) AND (Age=40-49) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 0-2) AND (Tumor Size = 50-54) AND  => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 40-44) AND (Age=40-49) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 40-44) AND (Age=30-39) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 40-44) AND (Age=60-69) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 30-34) AND (Age=60-69) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 30-34) AND (Age=30-39) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 30-34) AND (Age=50-59) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 30-34) AND (Age=40-49) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 25-29) AND (Menopause=ge40) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 25-29) AND (Menopause=premeno) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 3-5) AND (Tumor Size = 20-24) AND  => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 6-8) AND (Tumor Size=45-49) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 6-8) AND (Tumor Size=25-29) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 6-8) AND (Tumor Size=15-19) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 6-8) AND (Tumor Size=35-39) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 6-8) AND (Tumor Size=30-34) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 6-8) AND (Tumor Size=10-14) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 6-8) AND (Tumor Size=40-44) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 15-17) AND (Menopause=ge40) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 15-17) AND (Menopause=premeno) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 9-11) AND (Node Caps=?) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 9-11) AND (Node Caps=yes) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 12-14) AND (Tumor Size=15-19) => no-recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 12-14) AND (Tumor Size=30-34) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 12-14) AND (Tumor Size=25-29) => recurrence-events
+Si (Deg. Malig. = 3) AND (Inv. Nodes = 24-26) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = right_up) AND (Inv. Nodes=0-2) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = right_up) AND (Inv. Nodes=3-5) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_low) AND (Age = 40-49) AND (Breast = left) AND (Inv. Nodes = 3-5) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_low) AND (Age = 40-49) AND (Breast = right) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_low) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_low) AND (Age = 60-69) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_low) AND (Age = 30-39) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_up) AND (Menopause = premeno) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_up) AND (Menopause = ge40) AND (Age = 60-69) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_up) AND (Menopause = ge40) AND (Age = 50-59) AND (Breast=right) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_up) AND (Menopause = ge40) AND (Age = 50-59) AND (Breast=left) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = left_up) AND (Menopause = ge40) AND (Age = 40-49) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = right_low) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = central) AND (Age=40-49) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = central) AND (Age=30-39) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 20-24) AND (Breast Quadrant = central) AND (Age=50-59) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 15-19) AND (Menopause = ge40) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 15-19) AND (Menopause = premeno) AND (Breast = left) AND (Age = 40-49) AND (Breast Quadrant=left_low) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 15-19) AND (Menopause = premeno) AND (Breast = left) AND (Age = 40-49) AND (Breast Quadrant=left_up) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 15-19) AND (Menopause = premeno) AND (Breast = left) AND (Age = 50-59) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 15-19) AND (Menopause = premeno) AND (Breast = right) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 15-19) AND (Menopause = lt40) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 0-4) AND (Age = 40-49) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 0-4) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_low) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_low) AND (Age = 30-39) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_low) AND (Age = 60-69) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_low) AND (Age = 40-49) AND (Menopause = premeno) AND (Breast = left) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_low) AND (Age = 40-49) AND (Menopause = ge40) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_up) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = central) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = right_low) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 25-29) AND (Breast Quadrant = right_up) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 50-54) AND (Inv. Nodes = 0-2) AND (Age = 40-49) AND (Breast=left) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 50-54) AND (Inv. Nodes = 0-2) AND (Age = 40-49) AND (Breast=right) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 50-54) AND (Inv. Nodes = 0-2) AND (Age = 60-69) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 50-54) AND (Inv. Nodes = 0-2) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 50-54) AND (Inv. Nodes = 9-11) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 40-44) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 40-44) AND (Age = 40-49) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 40-44) AND (Age = 30-39) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 40-44) AND (Age = 60-69) AND (Inv. Nodes=3-5) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 40-44) AND (Age = 60-69) AND (Inv. Nodes=0-2) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 35-39) AND (Breast Quadrant=left_up) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 35-39) AND (Breast Quadrant=right_up) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 35-39) AND (Breast Quadrant=left_low) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_low) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_up) AND (Inv. Nodes = 0-2) AND (Age = 60-69) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_up) AND (Inv. Nodes = 0-2) AND (Age = 40-49) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_up) AND (Inv. Nodes = 6-8) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_up) AND (Inv. Nodes = 3-5) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = left_up) AND (Inv. Nodes = 9-11) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_low) AND (Age=40-49) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_low) AND (Age=50-59) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_up) AND (Inv. Nodes = 6-8) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_up) AND (Inv. Nodes = 0-2) AND (Age=40-49) => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_up) AND (Inv. Nodes = 0-2) AND (Age=60-69) => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = right_up) AND (Inv. Nodes = 3-5) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 30-34) AND (Breast Quadrant = central) AND  => recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 10-14) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 5-9) AND  => no-recurrence-events
+Si (Deg. Malig. = 2) AND (Tumor Size = 45-49) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 20-24) AND (Menopause = ge40) AND (Breast Quadrant=left_low) => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 20-24) AND (Menopause = ge40) AND (Breast Quadrant=left_up) => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 20-24) AND (Menopause = premeno) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 20-24) AND (Menopause = lt40) AND  => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 10-14) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 30-34) AND (Age = 60-69) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 30-34) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 30-34) AND (Age = 40-49) AND (Irradiate=no) => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 30-34) AND (Age = 40-49) AND (Irradiate=yes) => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 30-34) AND (Age = 30-39) AND  => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 15-19) AND (Age = 50-59) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 15-19) AND (Age = 60-69) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 15-19) AND (Age = 30-39) AND (Breast=left) => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 15-19) AND (Age = 30-39) AND (Breast=right) => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 15-19) AND (Age = 70-79) AND  => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 5-9) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 50-54) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_up) AND (Age = 60-69) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 25-29) AND (Breast Quadrant = right_low) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 25-29) AND (Breast Quadrant = central) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 25-29) AND (Breast Quadrant = left_low) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 40-44) AND (Breast=right) => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 40-44) AND (Breast=left) => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 0-4) AND  => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 35-39) AND (Breast=left) => no-recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 35-39) AND (Breast=right) => recurrence-events
+Si (Deg. Malig. = 1) AND (Tumor Size = 45-49) AND  => recurrence-events

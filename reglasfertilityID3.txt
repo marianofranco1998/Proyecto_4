@@ -1,0 +1,30 @@
+Si (AGE = (30,33]) AND (SITTING = (14,16]) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS=0) =>N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS=-1) =>O
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS=1) =>N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = -1) AND (SEASON = spring) AND  => O
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = -1) AND (SEASON = summer) AND (TRAUMA=1) =>N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = -1) AND (SEASON = summer) AND (TRAUMA=0) =>O
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = 0) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = 1) AND  => O
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = -1) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 1) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = fall) AND  => O
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = winter) AND (DISEASE=1) =>N
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = winter) AND (DISEASE=0) =>O
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 1) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = once a week) AND (SEASON = fall) AND (DISEASE=1) =>O
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = once a week) AND (SEASON = fall) AND (DISEASE=0) =>N
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = once a week) AND (SEASON = spring) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = several times a week) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = hardly ever or never) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (10,12]) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (8,10]) AND  => N
+Si (AGE = (30,33]) AND (SITTING = [0,2]) AND (SEASON=spring) =>O
+Si (AGE = (30,33]) AND (SITTING = [0,2]) AND (SEASON=summer) =>N
+Si (AGE = (33,36]) AND (ALCOHOL=once a week) =>O
+Si (AGE = (33,36]) AND (ALCOHOL=several times a week) =>N
+Si (AGE = (33,36]) AND (ALCOHOL=several times a day) =>N
+Si (AGE = (33,36]) AND (ALCOHOL=hardly ever or never) =>N
+Si (AGE = (24,27]) AND (TRAUMA = 0) AND  => N
+Si (AGE = (27,30]) AND  => N
