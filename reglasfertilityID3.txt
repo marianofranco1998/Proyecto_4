@@ -1,30 +1,30 @@
-Si (AGE = (30,33]) AND (SITTING = (14,16]) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS = 0) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS = -1) AND  => O
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS = 1) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = -1) AND (SEASON = spring) AND  => O
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = -1) AND (SEASON = summer) AND (TRAUMA = 1) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = -1) AND (SEASON = summer) AND (TRAUMA = 0) AND  => O
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = 0) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 0) AND (SMOKING = 1) AND  => O
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = -1) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = 1) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = fall) AND  => O
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = winter) AND (DISEASE = 1) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = winter) AND (DISEASE = 0) AND  => O
-Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 1) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = once a week) AND (SEASON = fall) AND (DISEASE = 1) AND  => O
-Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = once a week) AND (SEASON = fall) AND (DISEASE = 0) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = once a week) AND (SEASON = spring) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = several times a week) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = 0) AND (ALCOHOL = hardly ever or never) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (10,12]) AND  => N
-Si (AGE = (30,33]) AND (SITTING = (8,10]) AND  => N
-Si (AGE = (30,33]) AND (SITTING = [0,2]) AND (SEASON = spring) AND  => O
-Si (AGE = (30,33]) AND (SITTING = [0,2]) AND (SEASON = summer) AND  => N
-Si (AGE = (33,36]) AND (ALCOHOL = once a week) AND  => O
-Si (AGE = (33,36]) AND (ALCOHOL = several times a week) AND  => N
-Si (AGE = (33,36]) AND (ALCOHOL = several times a day) AND  => N
-Si (AGE = (33,36]) AND (ALCOHOL = hardly ever or never) AND  => N
-Si (AGE = (24,27]) AND (TRAUMA = 0) AND  => N
-Si (AGE = (27,30]) AND  => N
+Si (AGE = (30,33]) AND (SITTING = (14,16]) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS = more than three months ago) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS = less than three months ago) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = hardly ever or never) AND (FEVERS = no) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = more than three months ago) AND (SMOKING = never) AND (SEASON = spring) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = more than three months ago) AND (SMOKING = never) AND (SEASON = summer) AND (TRAUMA = no) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = more than three months ago) AND (SMOKING = never) AND (SEASON = summer) AND (TRAUMA = yes) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = more than three months ago) AND (SMOKING = occasional) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = more than three months ago) AND (SMOKING = daily) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = less than three months ago) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = once a week) AND (FEVERS = no) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = fall) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = winter) AND (DISEASE = no) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (4,8]) AND (ALCOHOL = several times a week) AND (SEASON = winter) AND (DISEASE = yes) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = no) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = yes) AND (ALCOHOL = once a week) AND (SEASON = fall) AND (DISEASE = no) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = yes) AND (ALCOHOL = once a week) AND (SEASON = fall) AND (DISEASE = yes) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = yes) AND (ALCOHOL = once a week) AND (SEASON = spring) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = yes) AND (ALCOHOL = several times a week) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (2,4]) AND (TRAUMA = yes) AND (ALCOHOL = hardly ever or never) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (10,12]) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = (8,10]) AND  => Normal
+Si (AGE = (30,33]) AND (SITTING = [0,2]) AND (SEASON = spring) AND  => Altered
+Si (AGE = (30,33]) AND (SITTING = [0,2]) AND (SEASON = summer) AND  => Normal
+Si (AGE = (33,36]) AND (ALCOHOL = once a week) AND  => Altered
+Si (AGE = (33,36]) AND (ALCOHOL = several times a week) AND  => Normal
+Si (AGE = (33,36]) AND (ALCOHOL = several times a day) AND  => Normal
+Si (AGE = (33,36]) AND (ALCOHOL = hardly ever or never) AND  => Normal
+Si (AGE = (24,27]) AND (TRAUMA = yes) AND  => Normal
+Si (AGE = (27,30]) AND  => Normal

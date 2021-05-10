@@ -68,6 +68,47 @@ def season(i):
     return switcher.get(i)
 
 original['SEASON']=original['SEASON'].apply(season)
+def disease(i):
+    switcher = {
+        0: "yes",
+        1: "no"
+    }
+    return switcher.get(i)
+
+original['DISEASE']=original['DISEASE'].apply(disease)
+
+original['TRAUMA']=original['TRAUMA'].apply(disease)
+
+original['SURGERY']=original['SURGERY'].apply(disease)
+
+def fevers(i):
+    switcher = {
+        -1: "less than three months ago",
+        0: "more than three months ago",
+        1: "no"
+    }
+    return switcher.get(i)
+
+original['FEVERS']=original['FEVERS'].apply(fevers)
+
+def smoking(i):
+    switcher = {
+        -1: "never",
+        0: "occasional",
+        1: "daily"
+    }
+    return switcher.get(i)
+
+original['SMOKING']=original['SMOKING'].apply(smoking)
+
+def output(i):
+    switcher = {
+        "N": "Normal",
+        "O": "Altered"
+    }
+    return switcher.get(i)
+
+original['OUTPUT']=original['OUTPUT'].apply(output)
 
 original.head()
 ML.crear_arbol(original, 'fertilityID3')
