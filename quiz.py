@@ -17,7 +17,6 @@ def makeQuiz(labels, adj):
             for el in listNC:
                 text = text + el[0] + "%: " + labels[int(el[1])] + "\n"
 
-        print("Entre a FINAL WINDOW")
         Label(frame,text="Resultado: " + pregunta + "\n\n" + text, font=('Helvetica',20)).pack(pady=20)
         Button(frame, text="OK", command=clear_frame).pack(pady=20)
 
@@ -27,12 +26,9 @@ def makeQuiz(labels, adj):
 
     def getQuestion(opcion):
         clear_frame()
-        print("OPCION: " + str(opcion))
 
         pregunta = labels[opcion]
         respuestas = adj[opcion]
-
-        print("YO SOY PRGUNTA:" + pregunta)
 
         if (pregunta == 'Normal' or pregunta == 'Altered'):
             finalWindow(pregunta)
@@ -45,7 +41,6 @@ def makeQuiz(labels, adj):
         Label(frame,text=pregunta, font=('Helvetica',20)).pack(pady=20)
         for op in opciones:
             Button(frame, text=op[0], command=(lambda opc = op: getQuestion(opc[1]))).pack(pady=20)
-            print(op[1])
     
     getQuestion(0)
     win.mainloop()
