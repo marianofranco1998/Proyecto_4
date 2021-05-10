@@ -97,6 +97,7 @@ def rec_crear_arbol(df, G, parent, lab, regla):
     #y mandamos a recrear el arbol con el resto de subtablas
     global indx
     global reglasDeInferencia
+
     global arbol_labels
     global arbol_aristas
     # Checamos que la columna de classificación tenga un solo valor, si este es el caso, link up y BREAK
