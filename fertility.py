@@ -5,6 +5,7 @@ import ML
 import networkx as nx
 from networkx.drawing.nx_agraph import graphviz_layout, to_agraph
 import pygraphviz as pgv
+import quiz
 
 ## datos
 original = pd.read_csv('fertility_Diagnosis.txt')
@@ -111,4 +112,7 @@ def output(i):
 original['OUTPUT']=original['OUTPUT'].apply(output)
 
 original.head()
-ML.crear_arbol(original, 'fertilityID3')
+
+labels, adj = ML.crear_arbol(original, 'fertilityID3')
+
+quiz.makeQuiz(labels, adj)
