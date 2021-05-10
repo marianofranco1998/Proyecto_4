@@ -43,10 +43,16 @@ int_node = '#67727E'
 undetermined_node = '#000000' #'#c66900'
 indx = 0
 reglasDeInferencia = []
+arbol_labels = []
+arbol_aristas = []
 def crear_arbol(df, nombreImg):
     G = nx.DiGraph(bgcolor=background)
     global indx
     global reglasDeInferencia
+    global arbol_labels
+    global arbol_aristas
+    arbol_aristas = []
+    arbol_labels = []
     indx = 0
     reglasDeInferencia = []
     rec_crear_arbol(df,G, -1, 'f','Si ')
@@ -58,10 +64,23 @@ def crear_arbol(df, nombreImg):
     A = to_agraph(G)
     A.layout('dot')
     A.draw(nombreImg+'.png')
+    #guardo las reglas de inferencia en un archivo
     fileReglas = open('reglas'+nombreImg+'.txt',"w")
     for i in reglasDeInferencia:
         fileReglas.write(i+'\n')
     fileReglas.close()
+    #guardo el arbol en un archivo
+    fileArbolLabels = open(nombreImg+'arbolLabels.txt',"w")
+    for i in arbol_labels:
+        fileArbolLabels.write(str(i)+'\n')
+    fileArbolLabels.close()
+    
+    fileArbolAristas = open(nombreImg+'arbolAristas.txt',"w")
+    for i in arbol_aristas:
+        fileArbolAristas.write(str(i)+'\n')
+    fileArbolAristas.close()
+    return arbol_labels, arbol_aristas
+
 
 #función recursiva que crea el arbol de ID3
 #Parametros:
@@ -78,10 +97,20 @@ def rec_crear_arbol(df, G, parent, lab, regla):
     #y mandamos a recrear el arbol con el resto de subtablas
     global indx
     global reglasDeInferencia
+    global arbol_labels
+    global arbol_aristas
     # Checamos que la columna de classificación tenga un solo valor, si este es el caso, link up y BREAK
     arr_check = df.iloc[:,-1].unique()
     if len(arr_check) == 1:
         reglasDeInferencia.append(regla + " => "+str(arr_check[0]))
+        #en el indice indx de las listas arbol_ voy a guardar la informacion de este nodo
+        arbol_labels.append(arr_check[0])
+        arbol_aristas.append([]) 
+
+        #agrego la arista al nodo de mi padre
+        arbol_aristas[parent].append([lab, indx])
+
+        #ahora agrego los nodos a la grafica
         G.add_node(indx,label=arr_check[0],style='filled',fillcolor=end_node,penwidth=0,fontcolor=background)
         G.add_edge(parent,indx,label=lab,fontcolor=int_node,arrowhead='open',color=int_node)
         indx+=1
@@ -99,6 +128,13 @@ def rec_crear_arbol(df, G, parent, lab, regla):
     # lo que hacemos es desplegar la probabilidad de cada resultado
     if df.shape[1] == 1:
         #decimos que el metodo no es concluyente
+        #agregamos la etiqueta y creamos el nodo para las aristas de este nodo
+        arbol_aristas.append([])
+        arbol_labels.append('No concluyente')
+        #agregamos la arista al padre
+        arbol_aristas[parent].append([lab, indx])
+        
+
         G.add_node(indx,label='No concluyente',style='filled',fillcolor=undetermined_node,penwidth=0,fontcolor=background)
         G.add_edge(parent,indx,label=lab,fontcolor=int_node,arrowhead='open',color=int_node)
         indxNoC = indx
@@ -110,6 +146,12 @@ def rec_crear_arbol(df, G, parent, lab, regla):
         
         #creamos un nodo para cada clasificación con su respectiva probabilidad 
         for value, count in value_counts.iteritems():
+            #para este nodo ya no guardamos indices a los siguientes nodos
+            #directamente guardamos el valor asociado a cada probabilidad en lugar del indice
+            #agrego a las listas para que indice esté  sincronizada con la posicion en la lista
+            arbol_aristas[indxNoC].append([str(round(count/tot*100,2)), indx]) 
+            arbol_aristas.append([])
+            arbol_labels.append(value)
             G.add_node(indx,label=value,style='filled',fillcolor=end_node,penwidth=0,fontcolor=background)
             G.add_edge(indxNoC, indx,label=str(round(count/tot*100,2)),fontcolor=int_node,arrowhead='open',color=int_node)
             indx += 1
@@ -126,17 +168,29 @@ def rec_crear_arbol(df, G, parent, lab, regla):
             min_ent = new_ent
             col_min_ent = i
 
-    #obtenemos todos los valores del atributo de menor entropia
-    values = df.iloc[:,col_min_ent].unique()
-
     #obtenemos la etiqueta/nombre de este atributo
     child = df.columns[col_min_ent]
+    arbol_labels.append(child)
+    arbol_aristas.append([])
+    #agregamos la arista al padre
+    if parent != -1:
+        arbol_aristas[parent].append([lab, indx])
+    
+    #lo agregamos a la grafica
     G.add_node(indx,label=child,style='filled',fillcolor= int_node,penwidth=0,fontcolor=background)
     if parent != -1:
         G.add_edge(parent,indx,label=lab,fontcolor=int_node,arrowhead='open',color=int_node)
+    
+    #obtenemos todos los valores del atributo de menor entropia
+    values = df.iloc[:,col_min_ent].unique()
+    #guardamos el indice para mandarlo como parametro en la recursion 
     indxMinE = indx
     indx += 1
+    for k in values:
+        rec_df = df[ df[child] == k ].drop(child,axis=1)
+        rec_crear_arbol(rec_df,G, indxMinE, k, regla +'('+str(child)+' = '+str(k)+') AND ')
     
+    """
     if min_ent == 0:
         classes = []
         # con df[child] == k seleccionamos los registros que tenga un valor k en el atributo
@@ -158,3 +212,5 @@ def rec_crear_arbol(df, G, parent, lab, regla):
         for k in values:
             rec_df = df[ df[child] == k ].drop(child,axis=1)
             rec_crear_arbol(rec_df,G, indxMinE, k, regla +'('+str(child)+' = '+str(k)+') AND ')
+    """
+    return 
